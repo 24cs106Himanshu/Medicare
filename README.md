@@ -46,6 +46,9 @@ A modern, responsive React frontend for the Medicare healthcare management syste
 ## 📦 Installation
 
 ```bash
+# Navigate to frontend directory
+cd frontend
+
 # Install dependencies
 npm install
 
@@ -61,7 +64,7 @@ npm run preview
 
 ## 🌐 Environment Setup
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the `frontend` directory:
 
 ```env
 VITE_API_URL=http://localhost:5000/api
@@ -150,21 +153,27 @@ npm run build
 ## 📊 Project Structure
 
 ```
-src/
-├── components/          # Reusable UI components
-│   ├── chatbot/        # AI chatbot widget
-│   ├── common/         # Common components (buttons, modals, etc.)
-│   └── layout/         # Layout components (header, sidebar)
-├── contexts/           # React Context providers
-├── pages/              # Page components
-│   ├── auth/          # Authentication pages
-│   ├── dashboard/     # Dashboard pages
-│   ├── appointments/  # Appointment management
-│   ├── prescriptions/ # Prescription management
-│   ├── records/       # Medical records
-│   └── profile/       # User profile
-├── services/          # API services
-└── styles/            # Global styles and Tailwind config
+frontend/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── chatbot/        # AI chatbot widget
+│   │   ├── common/         # Common components (buttons, modals, etc.)
+│   │   └── layout/         # Layout components (header, sidebar)
+│   ├── contexts/           # React Context providers
+│   ├── pages/              # Page components
+│   │   ├── auth/          # Authentication pages
+│   │   ├── dashboard/     # Dashboard pages
+│   │   ├── appointments/  # Appointment management
+│   │   ├── prescriptions/ # Prescription management
+│   │   ├── records/       # Medical records
+│   │   └── profile/       # User profile
+│   ├── services/          # API services
+│   └── styles/            # Global styles and Tailwind config
+├── index.html             # Entry HTML file
+├── vite.config.js         # Vite configuration
+├── tailwind.config.js     # Tailwind CSS configuration
+├── postcss.config.js      # PostCSS configuration
+└── package.json           # Dependencies and scripts
 ```
 
 ## 🤝 Contributing
